@@ -1,4 +1,5 @@
 #!/bin/bash
+#Author Hema Siva Kishore
 a=`df -h  | egrep -v "tmpfs|devtmpfs|/dev/loop*" | tail -n+2 | awk '{print $5}' | cut -d'%' -f1`
 for i in $a
 do
